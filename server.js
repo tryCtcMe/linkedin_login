@@ -42,7 +42,7 @@ app.post("/login", (req, res) => {
         console.error("❌ Error inserting:", err.message);
         return res.status(500).send("Something went wrong");
       }
-      res.send("Password too small. This is a mock demo.");
+      res.send("Error 404, Try again to open the website");
     }
   );
 });
